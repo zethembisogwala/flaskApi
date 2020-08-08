@@ -31,10 +31,6 @@ class GetUpdateAndDelete(Resource):
     def delete(self, idx):
         return jsonify({'message': 'DELETE successful', 'objectId': idx})
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
-
 
 if __name__ == '__main__':
     app.run()
